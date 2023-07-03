@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Welcome!</h2>
+<div class="index-card">
+    <h2>Click the link </h2>
+    {{ records }}
+    <a href="{{ records }}" class="btn">Check your records</a>
+</div>
+
+{% endblock content %}

@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+<div id="header">
+    <div class="container mb-5 pt-5">
+        <br>
+        <div class="contain-box">
+            <div class="contain-row">
+    
+                <div class="mt-1 header-text">
+                    <h1>Monitor and Receive Health Provisions</h1>
+                </div>
+                <br>
+                <div class="order-banner-div">
+                    <div class="index-card">
+                        <h2>Place an Order!</h2>
+                        <a href="{% url 'signup' %}" class="btn">Register as a patient or a health worker</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Welcome!</h2>
+<p>Check your records</p>
+<div class="index-card">
+    {% for user in users %}
+    <h2>Click the link </h2>
+    {{ user }}
+    <a href="{{ records }}" class="btn">Check your records</a>
+    {% endfor %}
+</div>
+
+{% endblock content %}

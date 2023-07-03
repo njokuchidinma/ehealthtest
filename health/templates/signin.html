@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2 class="title">Sign In</h2>
+<form action="{% url 'dashboard' %}" class="sign-form">
+    <input type="text" placeholder="Email">
+    <input type="password" placeholder="Password">
+
+    <div class="forget-link">
+        <div class="condition">
+            <input class="styled-checkbox" id="styled-checkbox-1" type="checkbox" value="value1">
+            <label for="styled-checkbox-1"></label>
+            <span>Remember Me</span>
+
+        </div>
+
+        <a href="#" class="forget">Forget Password</a>
+    </div>
+
+    <button type="submit" class="pix-btn">Sign In</button>
+
+    <p>Don’t have any account? <a href="{% url 'signup' %}">Sign up</a> now.</p>
+</form>
+{% endblock %}
+    
